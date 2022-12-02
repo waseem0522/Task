@@ -196,11 +196,21 @@ body {
     position: absolute;
     height: 56.82%;
     width: 4.7%;
-    top: 79.55%;
+    top: 100.55%;
     right: 40.39%;
     bottom: -36.36%;
     left: 54.91%;
     display: none;
+}
+
+.-m-4 {
+    margin: 6rem;
+}
+
+.py-24 {
+    padding-top: 38rem;
+    margin-left: 217px;
+    padding-bottom: 6rem;
 }
 
 .akar-iconschevron-down {

@@ -9,6 +9,7 @@ const GridDefault = () => {
                 setData(resp)
             })
         })
+         
     },[])
   return (
     <div className="grid-default-div">
@@ -57,448 +58,220 @@ const GridDefault = () => {
       </div>
       
         
-      <div className="ecommerce-accesories-div">
-        { data.map((item,index) =>
-        <div className="group-div4">
-          <div className="group-div4" key={index}>
-            <div className="rectangle-div3" />
-            <b className="jonathan-adler-chair">{item.title}</b>
-            <img className="group-icon" alt="" src="{item.image}" />
-            <div className="group-div8">
-              <div className="div2">${item.price}</div>
-              <div className="div3">{`$26.00 `}</div>
+      <section className="text-gray-600 body-font">
+  <div className="container px-5 py-24 mx-auto">
+  <div className="flex flex-wrap -m-4">
+    {
+      data.map((item)=>
+        <div className="p-4 md:w-1/4">
+        <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img
+            className="lg:h-48 md:h-36 w-full object-cover object-center"
+            src={item.image}
+            alt="blog"
+          />
+          <div className="p-6">
+            <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+              {item.category}
+            </h2>
+            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+              Price ${item.price}
+            </h1>
+            <p className="leading-relaxed mb-3">
+              {item.title}
+            </p>
+            <div className="flex items-center flex-wrap ">
+              <a className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
+                Learn More
+                <svg
+                  className="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M5 12h14" />
+                  <path d="M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg
+                  className="w-4 h-4 mr-1"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                  <circle cx={12} cy={12} r={3} />
+                </svg>
+                1.2K
+              </span>
+              <span className="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg
+                  className="w-4 h-4 mr-1"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />
+                </svg>
+                6
+              </span>
             </div>
           </div>
-           
-          <img className="group-icon1" alt="" src="../group-49.svg" />
-          
         </div>
-         )
-        }
-        
-        <img className="image-1164-icon" alt="" src="../image-1164@2x.png" />
-        <img className="image-1172-icon" alt="" src="../image-1172@2x.png" />
-        <img className="image-9-icon" alt="" src="../image-9@2x.png" />
-        <img className="purepng-1-icon" alt="" src="../purepng-1@2x.png" />
-        <img
-          className="cznmcy1wcml2yxrll3jhd3bpegvsx2-icon"
-          alt=""
-          src="../cznmcy1wcml2yxrll3jhd3bpegvsx2ltywdlcy93zwjzaxrlx2nvbnrlbnqvcgytczczlxbhas0xntgta2fuyxrlltaxlnbuzw-1@2x.png"
-        />
-        <img className="image-1173-icon" alt="" src="../image-1173@2x.png" />
-        <img className="icon" alt="" src="../10011-1@2x.png" />
-        <img className="drone-2-icon" alt="" src="../drone-2@2x.png" />
-        <img className="unnamed-1-icon" alt="" src="../unnamed-1@2x.png" />
-        <img className="cam-2-icon" alt="" src="../cam-2@2x.png" />
-        <img
-          className="movado-connect-1562173094-2-icon"
-          alt=""
-          src="../1562173100movadoconnect1562173094-2@2x.png"
-        />
-        <img
-          className="res-7e24bf6d78bbb2518489d0af84-icon"
-          alt=""
-          src="../res-7e24bf6d78bbb2518489d0af847413c9-450x450-fcp0-2@2x.png"
-        />
       </div>
+      )
+    }
     
-      <div className="ecommerce-accesories-div1">
-        <div className="group-div4">
-          <div className="group-div4">
-            <div className="rectangle-div3" />
-            <b className="jonathan-adler-chair1">Vitae suspendisse sed</b>
-            <img className="group-icon" alt="" src="{item.image}" />
-            <div className="group-div8">
-              <div className="div2">$42.00</div>
-              <div className="div3">{`$26.00 `}</div>
+      
+      <div className="p-4 md:w-1/3">
+        <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img
+            className="lg:h-48 md:h-36 w-full object-cover object-center"
+            src="https://dummyimage.com/721x401"
+            alt="blog"
+          />
+          <div className="p-6">
+            <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+              CATEGORY
+            </h2>
+            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+              The 400 Blows
+            </h1>
+            <p className="leading-relaxed mb-3">
+              Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
+              microdosing tousled waistcoat.
+            </p>
+            <div className="flex items-center flex-wrap">
+              <a className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
+                Learn More
+                <svg
+                  className="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M5 12h14" />
+                  <path d="M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg
+                  className="w-4 h-4 mr-1"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                  <circle cx={12} cy={12} r={3} />
+                </svg>
+                1.2K
+              </span>
+              <span className="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg
+                  className="w-4 h-4 mr-1"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />
+                </svg>
+                6
+              </span>
             </div>
           </div>
-          <img className="group-icon1" alt="" src="../group-491.svg" />
         </div>
-        <img className="image-1164-icon" alt="" src="../image-1164@2x.png" />
-        <img className="image-1172-icon" alt="" src="../image-1172@2x.png" />
-        <img className="image-9-icon1" alt="" src="../image-9@2x.png" />
-        <img className="purepng-1-icon" alt="" src="../purepng-1@2x.png" />
-        <img
-          className="cznmcy1wcml2yxrll3jhd3bpegvsx2-icon"
-          alt=""
-          src="../cznmcy1wcml2yxrll3jhd3bpegvsx2ltywdlcy93zwjzaxrlx2nvbnrlbnqvcgytczczlxbhas0xntgta2fuyxrlltaxlnbuzw-1@2x.png"
-        />
-        <img className="image-1173-icon1" alt="" src="../image-1173@2x.png" />
-        <img className="icon" alt="" src="../10011-1@2x.png" />
-        <img className="drone-2-icon" alt="" src="../drone-2@2x.png" />
-        <img className="unnamed-1-icon" alt="" src="../unnamed-1@2x.png" />
-        <img className="cam-2-icon" alt="" src="../cam-2@2x.png" />
-        <img
-          className="movado-connect-1562173094-2-icon"
-          alt=""
-          src="../1562173100movadoconnect1562173094-2@2x.png"
-        />
-        <img
-          className="res-7e24bf6d78bbb2518489d0af84-icon"
-          alt=""
-          src="../res-7e24bf6d78bbb2518489d0af847413c9-450x450-fcp0-2@2x.png"
-        />
       </div>
-      <div className="ecommerce-accesories-div2">
-        <div className="group-div4">
-          <div className="group-div4">
-            <div className="rectangle-div3" />
-            <b className="jonathan-adler-chair2">Sed at fermentum</b>
-            <img className="group-icon" alt="" src="../group-44.svg" />
-            <div className="group-div8">
-              <div className="div2">$42.00</div>
-              <div className="div3">{`$26.00 `}</div>
+      <div className="p-4 md:w-1/3">
+        <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+          <img
+            className="lg:h-48 md:h-36 w-full object-cover object-center"
+            src="https://dummyimage.com/722x402"
+            alt="blog"
+          />
+          <div className="p-6">
+            <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+              CATEGORY
+            </h2>
+            <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+              Shooting Stars
+            </h1>
+            <p className="leading-relaxed mb-3">
+              Photo booth fam kinfolk cold-pressed sriracha leggings jianbing
+              microdosing tousled waistcoat.
+            </p>
+            <div className="flex items-center flex-wrap ">
+              <a className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
+                Learn More
+                <svg
+                  className="w-4 h-4 ml-2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M5 12h14" />
+                  <path d="M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                <svg
+                  className="w-4 h-4 mr-1"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                  <circle cx={12} cy={12} r={3} />
+                </svg>
+                1.2K
+              </span>
+              <span className="text-gray-400 inline-flex items-center leading-none text-sm">
+                <svg
+                  className="w-4 h-4 mr-1"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  fill="none"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />
+                </svg>
+                6
+              </span>
             </div>
           </div>
-          <img className="group-icon1" alt="" src="../group-492.svg" />
         </div>
-        <img className="image-1164-icon" alt="" src="../image-1164@2x.png" />
-        <img className="image-1172-icon" alt="" src="../image-1172@2x.png" />
-        <img className="image-9-icon1" alt="" src="../image-9@2x.png" />
-        <img className="purepng-1-icon" alt="" src="../purepng-1@2x.png" />
-        <img
-          className="cznmcy1wcml2yxrll3jhd3bpegvsx2-icon"
-          alt=""
-          src="../cznmcy1wcml2yxrll3jhd3bpegvsx2ltywdlcy93zwjzaxrlx2nvbnrlbnqvcgytczczlxbhas0xntgta2fuyxrlltaxlnbuzw-1@2x.png"
-        />
-        <img className="image-1173-icon" alt="" src="../image-1173@2x.png" />
-        <img className="icon2" alt="" src="../10011-1@2x.png" />
-        <img className="drone-2-icon" alt="" src="../drone-2@2x.png" />
-        <img className="unnamed-1-icon" alt="" src="../unnamed-1@2x.png" />
-        <img className="cam-2-icon" alt="" src="../cam-2@2x.png" />
-        <img
-          className="movado-connect-1562173094-2-icon"
-          alt=""
-          src="../1562173100movadoconnect1562173094-2@2x.png"
-        />
-        <img
-          className="res-7e24bf6d78bbb2518489d0af84-icon"
-          alt=""
-          src="../res-7e24bf6d78bbb2518489d0af847413c9-450x450-fcp0-2@2x.png"
-        />
       </div>
-      <div className="ecommerce-accesories-div3">
-        <div className="group-div4">
-          <div className="group-div4">
-            <div className="rectangle-div3" />
-            <b className="jonathan-adler-chair3">Ultrices mauris sit</b>
-            <img className="group-icon" alt="" src="../group-44.svg" />
-            <div className="group-div8">
-              <div className="div2">$42.00</div>
-              <div className="div3">{`$26.00 `}</div>
-            </div>
-          </div>
-          <img className="group-icon1" alt="" src="../group-493.svg" />
-        </div>
-        <img className="image-1164-icon3" alt="" src="../image-1164@2x.png" />
-        <img className="image-1172-icon" alt="" src="../image-1172@2x.png" />
-        <img className="image-9-icon1" alt="" src="../image-9@2x.png" />
-        <img className="purepng-1-icon" alt="" src="../purepng-1@2x.png" />
-        <img
-          className="cznmcy1wcml2yxrll3jhd3bpegvsx2-icon"
-          alt=""
-          src="../cznmcy1wcml2yxrll3jhd3bpegvsx2ltywdlcy93zwjzaxrlx2nvbnrlbnqvcgytczczlxbhas0xntgta2fuyxrlltaxlnbuzw-1@2x.png"
-        />
-        <img className="image-1173-icon" alt="" src="../image-1173@2x.png" />
-        <img className="icon" alt="" src="../10011-1@2x.png" />
-        <img className="drone-2-icon" alt="" src="../drone-2@2x.png" />
-        <img className="unnamed-1-icon" alt="" src="../unnamed-1@2x.png" />
-        <img className="cam-2-icon" alt="" src="../cam-2@2x.png" />
-        <img
-          className="movado-connect-1562173094-2-icon"
-          alt=""
-          src="../1562173100movadoconnect1562173094-2@2x.png"
-        />
-        <img
-          className="res-7e24bf6d78bbb2518489d0af84-icon"
-          alt=""
-          src="../res-7e24bf6d78bbb2518489d0af847413c9-450x450-fcp0-2@2x.png"
-        />
-      </div>
-      <div className="ecommerce-accesories-div4">
-        <div className="group-div4">
-          <div className="group-div4">
-            <div className="rectangle-div3" />
-            <b className="jonathan-adler-chair4">Purus risus, ut</b>
-            <img className="group-icon" alt="" src="../group-44.svg" />
-            <div className="group-div8">
-              <div className="div2">$42.00</div>
-              <div className="div3">{`$26.00 `}</div>
-            </div>
-          </div>
-          <img className="group-icon1" alt="" src="../group-494.svg" />
-        </div>
-        <img className="image-1164-icon" alt="" src="../image-1164@2x.png" />
-        <img className="image-1172-icon" alt="" src="../image-1172@2x.png" />
-        <img className="image-9-icon1" alt="" src="../image-9@2x.png" />
-        <img className="purepng-1-icon" alt="" src="../purepng-1@2x.png" />
-        <img
-          className="cznmcy1wcml2yxrll3jhd3bpegvsx2-icon"
-          alt=""
-          src="../cznmcy1wcml2yxrll3jhd3bpegvsx2ltywdlcy93zwjzaxrlx2nvbnrlbnqvcgytczczlxbhas0xntgta2fuyxrlltaxlnbuzw-1@2x.png"
-        />
-        <img className="image-1173-icon" alt="" src="../image-1173@2x.png" />
-        <img className="icon2" alt="" src="../10011-1@2x.png" />
-        <img className="drone-2-icon" alt="" src="../drone-2@2x.png" />
-        <img className="unnamed-1-icon" alt="" src="../unnamed-1@2x.png" />
-        <img className="cam-2-icon" alt="" src="../cam-2@2x.png" />
-        <img
-          className="movado-connect-1562173094-2-icon"
-          alt=""
-          src="../1562173100movadoconnect1562173094-2@2x.png"
-        />
-        <img
-          className="res-7e24bf6d78bbb2518489d0af84-icon"
-          alt=""
-          src="../res-7e24bf6d78bbb2518489d0af847413c9-450x450-fcp0-2@2x.png"
-        />
-      </div>
-      <div className="ecommerce-accesories-div5">
-        <div className="group-div4">
-          <div className="group-div4">
-            <div className="rectangle-div3" />
-            <b className="jonathan-adler-chair5">Lectus vulputate faucibus</b>
-            <img className="group-icon" alt="" src="../group-44.svg" />
-            <div className="group-div8">
-              <div className="div2">$42.00</div>
-              <div className="div3">{`$26.00 `}</div>
-            </div>
-          </div>
-          <img className="group-icon1" alt="" src="../group-495.svg" />
-        </div>
-        <img className="image-1164-icon" alt="" src="../image-1164@2x.png" />
-        <img className="image-1172-icon" alt="" src="../image-1172@2x.png" />
-        <img className="image-9-icon1" alt="" src="../image-9@2x.png" />
-        <img className="purepng-1-icon" alt="" src="../purepng-1@2x.png" />
-        <img
-          className="cznmcy1wcml2yxrll3jhd3bpegvsx2-icon5"
-          alt=""
-          src="../cznmcy1wcml2yxrll3jhd3bpegvsx2ltywdlcy93zwjzaxrlx2nvbnrlbnqvcgytczczlxbhas0xntgta2fuyxrlltaxlnbuzw-1@2x.png"
-        />
-        <img className="image-1173-icon" alt="" src="../image-1173@2x.png" />
-        <img className="icon" alt="" src="../10011-1@2x.png" />
-        <img className="drone-2-icon" alt="" src="../drone-2@2x.png" />
-        <img className="unnamed-1-icon" alt="" src="../unnamed-1@2x.png" />
-        <img className="cam-2-icon" alt="" src="../cam-2@2x.png" />
-        <img
-          className="movado-connect-1562173094-2-icon"
-          alt=""
-          src="../1562173100movadoconnect1562173094-2@2x.png"
-        />
-        <img
-          className="res-7e24bf6d78bbb2518489d0af84-icon"
-          alt=""
-          src="../res-7e24bf6d78bbb2518489d0af847413c9-450x450-fcp0-2@2x.png"
-        />
-      </div>
-      <div className="ecommerce-accesories-div6">
-        <div className="group-div4">
-          <div className="group-div4">
-            <div className="rectangle-div3" />
-            <b className="jonathan-adler-chair6">Cras scelerisque velit</b>
-            <img className="group-icon" alt="" src="../group-44.svg" />
-            <div className="group-div8">
-              <div className="div2">$42.00</div>
-              <div className="div3">{`$26.00 `}</div>
-            </div>
-          </div>
-          <img className="group-icon1" alt="" src="../group-496.svg" />
-        </div>
-        <img className="image-1164-icon" alt="" src="../image-1164@2x.png" />
-        <img className="image-1172-icon" alt="" src="../image-1172@2x.png" />
-        <img className="image-9-icon1" alt="" src="../image-9@2x.png" />
-        <img className="purepng-1-icon" alt="" src="../purepng-1@2x.png" />
-        <img
-          className="cznmcy1wcml2yxrll3jhd3bpegvsx2-icon"
-          alt=""
-          src="../cznmcy1wcml2yxrll3jhd3bpegvsx2ltywdlcy93zwjzaxrlx2nvbnrlbnqvcgytczczlxbhas0xntgta2fuyxrlltaxlnbuzw-1@2x.png"
-        />
-        <img className="image-1173-icon" alt="" src="../image-1173@2x.png" />
-        <img className="icon" alt="" src="../10011-1@2x.png" />
-        <img className="drone-2-icon" alt="" src="../drone-2@2x.png" />
-        <img className="unnamed-1-icon" alt="" src="../unnamed-1@2x.png" />
-        <img className="cam-2-icon6" alt="" src="../cam-2@2x.png" />
-        <img
-          className="movado-connect-1562173094-2-icon"
-          alt=""
-          src="../1562173100movadoconnect1562173094-2@2x.png"
-        />
-        <img
-          className="res-7e24bf6d78bbb2518489d0af84-icon"
-          alt=""
-          src="../res-7e24bf6d78bbb2518489d0af847413c9-450x450-fcp0-2@2x.png"
-        />
-      </div>
-      <div className="ecommerce-accesories-div7">
-        <div className="group-div4">
-          <div className="group-div4">
-            <div className="rectangle-div3" />
-            <b className="jonathan-adler-chair7">Pellentesque condimentum ac</b>
-            <img className="group-icon" alt="" src="../group-44.svg" />
-            <div className="group-div8">
-              <div className="div2">$42.00</div>
-              <div className="div3">{`$26.00 `}</div>
-            </div>
-          </div>
-          <img className="group-icon1" alt="" src="../group-497.svg" />
-        </div>
-        <img className="image-1164-icon" alt="" src="../image-1164@2x.png" />
-        <img className="image-1172-icon" alt="" src="../image-1172@2x.png" />
-        <img className="image-9-icon1" alt="" src="../image-9@2x.png" />
-        <img className="purepng-1-icon" alt="" src="../purepng-1@2x.png" />
-        <img
-          className="cznmcy1wcml2yxrll3jhd3bpegvsx2-icon"
-          alt=""
-          src="../cznmcy1wcml2yxrll3jhd3bpegvsx2ltywdlcy93zwjzaxrlx2nvbnrlbnqvcgytczczlxbhas0xntgta2fuyxrlltaxlnbuzw-1@2x.png"
-        />
-        <img className="image-1173-icon" alt="" src="../image-1173@2x.png" />
-        <img className="icon" alt="" src="../10011-1@2x.png" />
-        <img className="drone-2-icon" alt="" src="../drone-2@2x.png" />
-        <img className="unnamed-1-icon" alt="" src="../unnamed-1@2x.png" />
-        <img className="cam-2-icon" alt="" src="../cam-2@2x.png" />
-        <img
-          className="movado-connect-1562173094-2-icon"
-          alt=""
-          src="../1562173100movadoconnect1562173094-2@2x.png"
-        />
-        <img
-          className="res-7e24bf6d78bbb2518489d0af84-icon7"
-          alt=""
-          src="../res-7e24bf6d78bbb2518489d0af847413c9-450x450-fcp0-2@2x.png"
-        />
-      </div>
-      <div className="ecommerce-accesories-div8">
-        <div className="group-div4">
-          <div className="group-div4">
-            <div className="rectangle-div3" />
-            <b className="jonathan-adler-chair8">Sollicitudin amet orci</b>
-            <img className="group-icon" alt="" src="../group-44.svg" />
-            <div className="group-div8">
-              <div className="div2">$42.00</div>
-              <div className="div3">{`$26.00 `}</div>
-            </div>
-          </div>
-          <img className="group-icon1" alt="" src="../group-498.svg" />
-        </div>
-        <img className="image-1164-icon" alt="" src="../image-1164@2x.png" />
-        <img className="image-1172-icon" alt="" src="../image-1172@2x.png" />
-        <img className="image-9-icon1" alt="" src="../image-9@2x.png" />
-        <img className="purepng-1-icon8" alt="" src="../purepng-1@2x.png" />
-        <img
-          className="cznmcy1wcml2yxrll3jhd3bpegvsx2-icon"
-          alt=""
-          src="../cznmcy1wcml2yxrll3jhd3bpegvsx2ltywdlcy93zwjzaxrlx2nvbnrlbnqvcgytczczlxbhas0xntgta2fuyxrlltaxlnbuzw-1@2x.png"
-        />
-        <img className="image-1173-icon" alt="" src="../image-1173@2x.png" />
-        <img className="icon" alt="" src="../10011-1@2x.png" />
-        <img className="drone-2-icon" alt="" src="../drone-2@2x.png" />
-        <img className="unnamed-1-icon" alt="" src="../unnamed-1@2x.png" />
-        <img className="cam-2-icon" alt="" src="../cam-2@2x.png" />
-        <img
-          className="movado-connect-1562173094-2-icon"
-          alt=""
-          src="../1562173100movadoconnect1562173094-2@2x.png"
-        />
-        <img
-          className="res-7e24bf6d78bbb2518489d0af84-icon"
-          alt=""
-          src="../res-7e24bf6d78bbb2518489d0af847413c9-450x450-fcp0-2@2x.png"
-        />
-      </div>
-      <div className="ecommerce-accesories-div9">
-        <div className="group-div4">
-          <div className="group-div4">
-            <div className="rectangle-div3" />
-            <b className="jonathan-adler-chair9">Vestibulum magna laoreet</b>
-            <img className="group-icon" alt="" src="../group-44.svg" />
-            <div className="group-div8">
-              <div className="div2">$42.00</div>
-              <div className="div3">{`$26.00 `}</div>
-            </div>
-          </div>
-          <img className="group-icon1" alt="" src="../group-499.svg" />
-        </div>
-        <img className="image-1164-icon" alt="" src="../image-1164@2x.png" />
-        <img className="image-1172-icon" alt="" src="../image-1172@2x.png" />
-        <img className="image-9-icon1" alt="" src="../image-9@2x.png" />
-        <img className="purepng-1-icon" alt="" src="../purepng-1@2x.png" />
-        <img
-          className="cznmcy1wcml2yxrll3jhd3bpegvsx2-icon"
-          alt=""
-          src="../cznmcy1wcml2yxrll3jhd3bpegvsx2ltywdlcy93zwjzaxrlx2nvbnrlbnqvcgytczczlxbhas0xntgta2fuyxrlltaxlnbuzw-1@2x.png"
-        />
-        <img className="image-1173-icon" alt="" src="../image-1173@2x.png" />
-        <img className="icon" alt="" src="../10011-1@2x.png" />
-        <img className="drone-2-icon" alt="" src="../drone-2@2x.png" />
-        <img className="unnamed-1-icon" alt="" src="../unnamed-1@2x.png" />
-        <img className="cam-2-icon" alt="" src="../cam-2@2x.png" />
-        <img
-          className="movado-connect-1562173094-2-icon9"
-          alt=""
-          src="../1562173100movadoconnect1562173094-2@2x.png"
-        />
-        <img
-          className="res-7e24bf6d78bbb2518489d0af84-icon"
-          alt=""
-          src="../res-7e24bf6d78bbb2518489d0af847413c9-450x450-fcp0-2@2x.png"
-        />
-      </div>
-      <div className="ecommerce-accesories-div10">
-        <div className="group-div4">
-          <div className="group-div4">
-            <div className="rectangle-div3" />
-            <b className="jonathan-adler-chair10">Fusce pellentesque at</b>
-            <img className="group-icon" alt="" src="../group-44.svg" />
-            <div className="group-div8">
-              <div className="div2">$42.00</div>
-              <div className="div3">{`$26.00 `}</div>
-            </div>
-          </div>
-          <img className="group-icon1" alt="" src="../group-4910.svg" />
-        </div>
-        <img className="image-1164-icon" alt="" src="../image-1164@2x.png" />
-        <img className="image-1172-icon" alt="" src="../image-1172@2x.png" />
-        <img className="image-9-icon1" alt="" src="../image-9@2x.png" />
-        <img className="purepng-1-icon" alt="" src="../purepng-1@2x.png" />
-        <img
-          className="cznmcy1wcml2yxrll3jhd3bpegvsx2-icon"
-          alt=""
-          src="../cznmcy1wcml2yxrll3jhd3bpegvsx2ltywdlcy93zwjzaxrlx2nvbnrlbnqvcgytczczlxbhas0xntgta2fuyxrlltaxlnbuzw-1@2x.png"
-        />
-        <img className="image-1173-icon" alt="" src="../image-1173@2x.png" />
-        <img className="icon" alt="" src="../10011-1@2x.png" />
-        <img className="drone-2-icon" alt="" src="../drone-2@2x.png" />
-        <img className="unnamed-1-icon10" alt="" src="../unnamed-1@2x.png" />
-        <img className="cam-2-icon" alt="" src="../cam-2@2x.png" />
-        <img
-          className="movado-connect-1562173094-2-icon"
-          alt=""
-          src="../1562173100movadoconnect1562173094-2@2x.png"
-        />
-        <img
-          className="res-7e24bf6d78bbb2518489d0af84-icon"
-          alt=""
-          src="../res-7e24bf6d78bbb2518489d0af847413c9-450x450-fcp0-2@2x.png"
-        />
-      </div>
-      <div className="ecommerce-accesories-div11">
-        <div className="group-div39">
-          <div className="group-div4">
-            <div className="rectangle-div14" />
-            <b className="jonathan-adler-chair11">
-              Ultricies condimentum imperdiet
-            </b>
-            <img className="group-icon22" alt="" src="../group-44.svg" />
-            <div className="group-div41">
-              <div className="div2">$42.00</div>
-              <div className="div3">{`$26.00 `}</div>
-            </div>
-          </div>
-          <img className="group-icon23" alt="" src="../group-4911.svg" />
-        </div>
-        <img className="image-1165-icon" alt="" src="../image-1165@2x.png" />
-      </div>
+    </div>
+  </div>
+</section>
+
+      
       
       <img className="image-1174-icon" alt="" src="../image-1174@2x.png" />
     </div>

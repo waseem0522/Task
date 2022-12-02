@@ -1,6 +1,8 @@
 .footer-div {
+    display: fixed;
     margin-top: 100px;
     top: 2233px;
+    margin-top: 700px;
     left: 0;
     width: 100%;
     height: 532px;
