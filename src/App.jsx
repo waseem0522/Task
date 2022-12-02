@@ -1216,17 +1216,13 @@ import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import GridDefault from "./components/Product/Product";
 const App = () => {
-    return ( <
-        div className = "container mx-auto" >
-        <
-        Navbar / >
-        <
-        GridDefault / >
-        <
-        Footer / >
-        <
-        /div>
-    );
+  return (
+    <div className="container mx-auto">
+      <Navbar/>
+      <GridDefault/>
+      <Footer/>
+    </div>
+  );
 };
 
 export default App;
