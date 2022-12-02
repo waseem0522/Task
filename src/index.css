@@ -1,0 +1,54 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+body {
+    @apply leading-[normal] m-0;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+body {
+    margin-left: 0;
+    line-height: normal;
+}
+
+:root {
+    /* fonts */
+    --paragraph-text: Lato;
+    --caption: "Josefin Sans";
+    --font-roboto: Roboto;
+    /* font sizes */
+    --font-size-xs: 12px;
+    --caption-size: 14px;
+    --paragraph-text-size: 16px;
+    --font-size-lg: 18px;
+    --list-titles-size: 22px;
+    /* Colors */
+    --white: #fff;
+    --pink: #fb2e86;
+    --sale-tage-coloe: #3f509e;
+    --text1: #151875;
+    --color-indigo-300: #0d0e43;
+    --color-gray-100: #f6f7fb;
+    --bg-shade: #eeeffb;
+    --color-gray-300: #e7e6ef;
+    --sub-text-color: #8a8fb9;
+    --color-black: #000;
+    /* border radiuses */
+    --br-md: 3px;
+}

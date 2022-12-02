@@ -1,0 +1,162 @@
+.footer-div {
+    margin-top: 100px;
+    top: 2233px;
+    left: 0;
+    width: 100%;
+    height: 532px;
+    color: var(--sub-text-color);
+}
+
+.blog-div1,
+.contact-div,
+.pages-div2,
+.products-div,
+.shop-div {
+    top: 25%;
+    left: 22.43%;
+    line-height: 20px;
+    color: var(--color-indigo-300);
+    display: inline-block;
+}
+
+.blog-div1,
+.contact-div,
+.products-div,
+.shop-div {
+    left: 28.89%;
+}
+
+.blog-div1,
+.contact-div,
+.shop-div {
+    left: 37.3%;
+}
+
+.contact-div,
+.shop-div {
+    left: 42.99%;
+}
+
+.contact-div {
+    left: 49.02%;
+}
+
+.rectangle-div19 {
+    width: 100%;
+    left: 0;
+    border: 2px solid var(--color-gray-300);
+    box-sizing: border-box;
+}
+
+.group-div44,
+.group-div45,
+.rectangle-div19,
+.rectangle-div20 {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.rectangle-div20 {
+    width: 100%;
+    left: 0;
+    background-color: var(--pink);
+}
+
+.group-div44,
+.group-div45 {
+    width: 16.09%;
+    left: 83.91%;
+}
+
+.group-div44 {
+    width: 26.93%;
+    left: 73.07%;
+}
+
+.hekto-b,
+.home-div1 {
+    position: absolute;
+    left: 0;
+    text-align: left;
+    display: inline-block;
+}
+
+.hekto-b {
+    top: 7.5%;
+    font-size: 34px;
+    font-family: var(--caption);
+    color: var(--color-indigo-300);
+}
+
+.home-div1 {
+    top: 0;
+    font-size: var(--paragraph-text-size);
+    line-height: 20px;
+    font-family: var(--paragraph-text);
+    color: var(--pink);
+}
+
+.group-div46 {
+    position: absolute;
+    height: 50%;
+    width: 3.65%;
+    top: 25%;
+    right: 80.54%;
+    bottom: 25%;
+    left: 15.8%;
+}
+
+.akar-iconschevron-down1,
+.uilsearch-icon {
+    position: absolute;
+    height: 30%;
+    width: 1.02%;
+    top: 35%;
+    right: 79.35%;
+    bottom: 35%;
+    left: 19.63%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+
+.uilsearch-icon {
+    height: 60%;
+    width: 2.04%;
+    top: 20%;
+    right: 1.1%;
+    bottom: 20%;
+    left: 96.86%;
+}
+
+.image-1174-icon,
+.nav-bar {
+    position: absolute;
+    top: 63px;
+    left: 371px;
+    width: 1177px;
+    height: 40px;
+}
+
+.image-1174-icon {
+    top: 2057px;
+    left: 508px;
+    width: 904px;
+    height: 93px;
+    object-fit: cover;
+}
+
+.grid-default-div {
+    position: relative;
+    background-color: var(--white);
+    width: 100%;
+    height: 2765px;
+    overflow: hidden;
+    text-align: center;
+    font-size: var(--font-size-lg);
+    color: var(--text1);
+    font-family: var(--caption);
+}
